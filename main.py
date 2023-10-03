@@ -20,3 +20,13 @@
 #
 # - У дев'ятому рядку виведіть довжину цього рядка.
 ###
+
+user_input = input("Enter your word: ")
+print(user_input[2])
+print(user_input[-2])
+print(user_input[0:5])
+print(user_input[0:-2])
+print(user_input[2::2])
+print(user_input[1::2])
+print(user_input[len(user_input)::-2])
+print(len(user_input))
