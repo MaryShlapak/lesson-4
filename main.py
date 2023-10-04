@@ -4,10 +4,13 @@
 ###
 
 user_input = input("Enter your password: ")
-if user_input.isalpha() == True:
-    letter_count = len(user_input)
-    print(f"Letter count = {letter_count}\nDigit count = 0")
-elif user_input.isnumeric() == True:
-    digit_count = len(user_input)
-    print(f"Digit count = {digit_count}\nLetter count = 0")
-else:
+letter_count = 0
+digit_count = 0
+
+for char in user_input:
+    if char.isalpha():
+        letter_count += 1
+    elif char.isdigit():
+        digit_count += 1
+print("The number of letters =", letter_count)
+print("The number of digits =", digit_count)
