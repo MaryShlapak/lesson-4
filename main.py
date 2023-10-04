@@ -42,7 +42,6 @@ while True:
     user_input = input("Enter your sentence: ")
     user_search = input("Enter your search word: ")
 
-
     if user_input.count(user_search) >= 1:
         user_replace = input("Enter a word for replacement: ")
         print(user_input.replace(user_search,user_replace))
@@ -115,3 +114,36 @@ while True:
                 print("The sentence does not include this symbols")
                 continue
         break
+
+        ###
+        # 4. Дано рядок. (зробити зрізи)
+        #
+        # - Спершу виведіть третій символ цього рядка.
+        #
+        # - У другому рядку виведіть передостанній символ цього рядка.
+        #
+        # - У третьому рядку виведіть перші п'ять символів цього рядка.
+        #
+        # - У четвертому рядку виведіть весь рядок, крім двох останніх символів.
+        #
+        # - У п'ятому рядку виведіть усі символи з парними індексами (вважаючи, що індексація починається з 0,
+        # тому символи виводяться з першого).
+        #
+        # - У шостому рядку виведіть усі символи з непарними індексами, тобто, починаючи з другого символу рядка.
+        #
+        # - У сьомому рядку виведіть усі символи у зворотному порядку.
+        #
+        # - У восьмому рядку виведіть усі символи рядка через один у зворотному порядку, починаючи з останнього.
+        #
+        # - У дев'ятому рядку виведіть довжину цього рядка.
+        ###
+
+user_input = input("Enter your word: ")
+print(user_input[2])
+print(user_input[-2])
+print(user_input[0:5])
+print(user_input[0:-2])
+print(user_input[2::2])
+print(user_input[1::2])
+print(user_input[len(user_input)::-2])
+print(len(user_input))
